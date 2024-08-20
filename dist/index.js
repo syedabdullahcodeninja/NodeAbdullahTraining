@@ -6,7 +6,6 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = 3000;
-// Simulate an asynchronous addition operation using callbacks
 function add(a, b, callback) {
     setTimeout(() => {
         const result = a + b;
@@ -14,7 +13,6 @@ function add(a, b, callback) {
         callback(result);
     }, 1000);
 }
-// Simulate an asynchronous multiplication operation using callbacks
 function multiply(a, b, callback) {
     setTimeout(() => {
         const result = a * b;
@@ -22,7 +20,6 @@ function multiply(a, b, callback) {
         callback(result);
     }, 1000);
 }
-// Simulate an asynchronous subtraction operation using callbacks
 function subtract(a, b, callback) {
     setTimeout(() => {
         const result = a - b;
@@ -30,7 +27,6 @@ function subtract(a, b, callback) {
         callback(result);
     }, 1000);
 }
-// Simulate an asynchronous division operation using callbacks
 function divide(a, b, callback) {
     setTimeout(() => {
         if (b === 0) {
@@ -43,7 +39,6 @@ function divide(a, b, callback) {
         }
     }, 1000);
 }
-// Combine all math operations in one route to demonstrate callback hell
 app.get('/', (req, res) => {
     const value1 = 5;
     const value2 = 10;

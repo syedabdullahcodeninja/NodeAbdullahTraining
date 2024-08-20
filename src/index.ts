@@ -47,7 +47,7 @@ app.get('/', (req, res) => {
     subtract(resultAfterAddition, value2, (resultAfterSubtraction) => {
       multiply(resultAfterSubtraction, value2, (resultAfterMultiplication) => {
         divide(resultAfterMultiplication, value2, (finalResult) => {
-          res.send(`Initial Values: ${value1} and ${value2} <br> 
+          res.send(`Initial Values is ${value1}, and ${value2} is used for maths operations <br> 
                     Addition Result: ${resultAfterAddition} <br> 
                     Subtraction Result: ${resultAfterSubtraction} <br> 
                     Multiplication Result: ${resultAfterMultiplication} <br> 
